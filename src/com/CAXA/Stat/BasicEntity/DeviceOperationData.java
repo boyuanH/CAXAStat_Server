@@ -14,6 +14,33 @@ public class DeviceOperationData {
     private String _para1;
     private String _para2;
     private String _para3;
+    private String _para4;
+    private String _para5;
+    private String _para6;
+
+    public String get_para4() {
+        return _para4;
+    }
+
+    public void set_para4(String _para4) {
+        this._para4 = _para4;
+    }
+
+    public String get_para5() {
+        return _para5;
+    }
+
+    public void set_para5(String _para5) {
+        this._para5 = _para5;
+    }
+
+    public String get_para6() {
+        return _para6;
+    }
+
+    public void set_para6(String _para6) {
+        this._para6 = _para6;
+    }
 
     public DeviceInfo get_deviceInfo() {
         return _deviceInfo;
@@ -75,7 +102,7 @@ public class DeviceOperationData {
 
     }
 
-    public DeviceOperationData(DeviceInfo deviceInfo,DeviceStatus deviceStatus,Date startTime,Date endTime,String para1,String para2,String para3){
+    public DeviceOperationData(DeviceInfo deviceInfo,DeviceStatus deviceStatus,Date startTime,Date endTime,String para1,String para2,String para3,String para4,String para5,String para6){
         this._deviceInfo    = deviceInfo;
         this._deviceStatus  = deviceStatus;
         this._startTime     = startTime;
@@ -83,5 +110,8 @@ public class DeviceOperationData {
         this._para1         = para1;
         this._para2         = para2;
         this._para3         = para3;
+        this._para4         = para4;
+        this._para5         = para5;
+        this._para6         = para6;
     }
 }
